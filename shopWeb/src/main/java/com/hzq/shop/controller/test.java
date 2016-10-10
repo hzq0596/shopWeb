@@ -12,7 +12,11 @@ public class test {
 //	         xing[0]='11100110';
 //	         xing[2]="10110100";
 //	         xing[3]="10101010";
-//	         String ss = new String(xing);                         
+//	         String ss = new String(xing);           
+
+
+
+              
 //	                                  
 	                                  
 	}
