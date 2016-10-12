@@ -1,9 +1,11 @@
 package com.hzq.shop.dao;
 
+import java.util.List;
+
+import org.apache.ibatis.annotations.Param;
+
 import com.hzq.shop.domain.Address;
 import com.hzq.shop.domain.AddressExample;
-import java.util.List;
-import org.apache.ibatis.annotations.Param;
 
 public interface AddressMapper {
     /**

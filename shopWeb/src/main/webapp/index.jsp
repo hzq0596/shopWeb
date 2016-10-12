@@ -24,4 +24,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <a href="add.jsp">新增数据</a>
     <a href="getAll.do">查看全部数据</a>
   </body>
+  
+  <form action="<%=basePath%>test/xx/testLogin" method="post">
+  	<input type="text" id="loginName" name ="loginName">
+  	<input type="password" id="password" name ="password"> 
+<button type="submit">提交</button>
+  </form>
 </html>

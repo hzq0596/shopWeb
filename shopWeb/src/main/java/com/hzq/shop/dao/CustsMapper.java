@@ -1,9 +1,11 @@
 package com.hzq.shop.dao;
 
+import java.util.List;
+
+import org.apache.ibatis.annotations.Param;
+
 import com.hzq.shop.domain.Custs;
 import com.hzq.shop.domain.CustsExample;
-import java.util.List;
-import org.apache.ibatis.annotations.Param;
 
 public interface CustsMapper {
     /**
