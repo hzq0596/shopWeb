@@ -1,5 +1,6 @@
-问题记录/总结
-1、ajax请求访问返回的数据不是json格式
+#问题记录/总结
+####1、ajax请求访问返回的数据不是json格式
+```
 Spring-mvc.xml配置文件添加：
 <mvc:annotation-driven /><!--不添加这个会导致找不到注解-->
 	<bean
@@ -33,6 +34,7 @@ Spring-mvc.xml配置文件添加：
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-annotations</artifactId>
 			<version>2.1.0</version>
-		</dependency>   
+		</dependency> 
+		```  
 	至此，只需要在controller类或者方法上添加@ResponseBody注解，即可返回json数据格式。
 	
