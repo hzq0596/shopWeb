@@ -31,6 +31,7 @@ import sun.misc.BASE64Decoder;
  * UEditor(百度编辑器)文件上传辅助类
  * 
  */
+@SuppressWarnings("restriction")
 public class Uploader {
 
 	// 文件大小常量, 单位kb
