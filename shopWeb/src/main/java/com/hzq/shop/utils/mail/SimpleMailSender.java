@@ -171,20 +171,26 @@ public class SimpleMailSender  {
         //这个类主要是设置邮件   
 	     MailSenderInfo mailInfo = new MailSenderInfo();    
 	     mailInfo.setMailServerHost("smtp.qq.com");    
-	     mailInfo.setMailServerPort("25");    
+	     mailInfo.setMailServerPort("465");    
 	     mailInfo.setValidate(true);    
-	     mailInfo.setUserName("itfather@1b23.com");    
-	     mailInfo.setPassword("tttt");//您的邮箱密码    
-	     mailInfo.setFromAddress("itfather@1b23.com");    
-	     mailInfo.setToAddress("313596790@qq.com");    
+	     mailInfo.setUserName("569349045@qq.com");    
+	     mailInfo.setPassword("tehehookotylbbdd");//您的邮箱密码    
+	     mailInfo.setFromAddress("569349045@qq.com");    
+	     mailInfo.setToAddress("hongzhq@ffcs.cn");    
 	     mailInfo.setSubject("设置邮箱标题");    
 	     mailInfo.setContent("设置邮箱内容");    
 	     //这个类主要来发送邮件   
 	  
 	     SimpleMailSender sms = new SimpleMailSender();   
-	     //sms.sendTextMail(mailInfo);//发送文体格式    
+	     try {
+			sms.sendTextMail(mailInfo);
+		} catch (Exception e) {
+			System.out.println("asd");
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}//发送文体格式    
 	     //sms.sendHtmlMail(mailInfo);//发送html格式   
-	     
+	     System.out.println("结束");
 	   }
     
 }   

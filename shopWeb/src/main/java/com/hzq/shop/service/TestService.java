@@ -1,7 +1,5 @@
 package com.hzq.shop.service;
 
-import org.springframework.stereotype.Service;
-
 /**
  * 
  * @ClassName: TestService 

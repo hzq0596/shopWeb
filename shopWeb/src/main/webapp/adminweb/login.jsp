@@ -8,40 +8,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="zh_cn">
 <head>
+<base href="<%=basePath%>">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <!-- basic styles -->
-
-<link href="<%=basePath %>plugin/ace/assets/css/bootstrap.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="<%=basePath %>plugin/ace/assets/css/font-awesome.min.css" />
-
-<!--[if IE 7]>
-		  <link rel="stylesheet" href="<%=basePath %>plugin/ace/assets/css/font-awesome-ie7.min.css" />
-		<![endif]-->
-
-<!-- page specific plugin styles -->
-
-<!-- fonts -->
-
-<!-- <link rel="stylesheet"
-	href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" /> -->
-
-<!-- ace styles -->
-
-<link rel="stylesheet" href="<%=basePath %>plugin/ace/assets/css/ace.min.css" />
-<link rel="stylesheet" href="<%=basePath %>plugin/ace/assets/css/ace-rtl.min.css" />
-
-<!--[if lte IE 8]>
-		  <link rel="stylesheet" href="<%=basePath %>plugin/ace/assets/css/ace-ie.min.css" />
-		<![endif]-->
-
-<!-- inline styles related to this page -->
-
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-
-<!--[if lt IE 9]>
-		<script src="<%=basePath %>plugin/ace/assets/js/html5shiv.js"></script>
-		<script src="<%=basePath %>plugin/ace/assets/js/respond.min.js"></script>
-		<![endif]-->
+<jsp:include page="/plugin/header.jsp"></jsp:include>
 </head>
 <body class="login-layout">
 	<div class="main-container">
@@ -71,7 +41,7 @@
 
 										<div class="space-6"></div>
 
-										<form method="post" action="<%=basePath %>login/custLogin" >
+										<form method="post" action="<%=basePath %>login/staffLogin" >
 											<fieldset>
 												<label class="block clearfix"> <span
 													class="block input-icon input-icon-right"> <input
@@ -251,51 +221,7 @@
 	</div>
 	<!-- /.main-container -->
 
-	<!-- basic scripts -->
-
-	<!--[if !IE]> -->
-
-	<script
-		src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-	<!-- <![endif]-->
-
-	<!--[if IE]>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<![endif]-->
-
-	<!--[if !IE]> -->
-
-	<script type="text/javascript">
-		window.jQuery
-				|| document
-						.write("<script src='<%=basePath %>plugin/ace/assets/js/jquery-2.0.3.min.js'>"
-								+ "<"+"/script>");
-	</script>
-
-	<!-- <![endif]-->
-
-	<!--[if IE]>
-<script type="text/javascript">
- window.jQuery || document.write("<script src='<%=basePath %>plugin/ace/assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
-</script>
-<![endif]-->
-
-	<script type="text/javascript">
-		if ("ontouchend" in document)
-			document
-					.write("<script src='<%=basePath %>plugin/ace/assets/js/jquery.mobile.custom.min.js'>"
-							+ "<"+"/script>");
-	</script>
-
-	<!-- inline scripts related to this page -->
-
-	<script type="text/javascript">
-		function show_box(id) {
-			jQuery('.widget-box.visible').removeClass('visible');
-			jQuery('#' + id).addClass('visible');
-		}
-	</script>
-	<div style="display: none"></div>
+ 
 </body>
+<jsp:include page="/plugin/footer.jsp" ></jsp:include>
 </html>
