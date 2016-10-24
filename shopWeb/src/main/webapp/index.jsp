@@ -26,7 +26,7 @@
 	<a href="getAll.do">查看全部数据</a>
 </body>
 
-<form action="<%=basePath%>test/xx/testLogin" method="post" id="formid">
+<form action="<%=basePath%>login/custLogin" method="post" id="formid">
 	<input type="text" id="custName" name="custName"> <input
 		type="password" id="custPass" name="custPass">
 	<button type="button" id="but">提交1</button>

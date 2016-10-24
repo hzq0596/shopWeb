@@ -17,7 +17,6 @@ import com.hzq.shop.utils.SessionUtil;
 import com.hzq.shop.utils.StringUtils;
 import com.hzq.shop.utils.mail.MailSenderInfo;
 import com.hzq.shop.utils.mail.SimpleMailSender;
-import com.hzq.shop.utils.sendsms.SendSMS;
 
 /**
  * @ClassName: LoginController
@@ -32,9 +31,18 @@ public class LoginController {
 	LoginService service;
 	Logger logger = Logger.getLogger(LoginController.class);
 	RetVo vo = null;
-
+	@RequestMapping("custLogin")
+	public String custLogin(String custName, String custPass,HttpServletRequest request){
+		Cust cust=service.custLogin(custName, custPass);
+		if (!StringUtils.isBlank(cust)) {
+			HttpSession session = request.getSession();
+			SessionUtil.setSession(session);
+		}
+		return null;
+		
+	}
 	/**
-	 * @Title: custLogin
+	 * @Title: 
 	 * @Description: TODO 顾客登录验证
 	 * @param userName 登录名
 	 * @param pass 密码
